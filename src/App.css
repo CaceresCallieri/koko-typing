@@ -1,0 +1,55 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 800px;
+}
+
+span {
+  position: relative;
+}
+
+.correct-character {
+  color: green;
+}
+
+.incorrect-character {
+  color: red;
+}
+
+.red-underline {
+  border-bottom: 1px solid red;
+}
+
+/* Carat */
+.active::before {
+  content: "|";
+  position: absolute;
+  right: 60%;
+  color: yellowgreen;
+  animation: 1s ease-in-out blink infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+input {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  opacity: 0.1;
+}

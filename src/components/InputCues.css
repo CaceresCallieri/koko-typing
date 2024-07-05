@@ -1,0 +1,27 @@
+section.input-cues {
+  margin-top: 10rem;
+}
+
+.input-cue {
+  display: flex;
+  align-items: center;
+}
+
+.input-cue > .key {
+  font-size: 0.5rem;
+  color: whitesmoke;
+  background-color: gray;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.15rem 0.25rem;
+
+  transition: transform 200ms ease-in-out;
+}
+
+.input-cue > .key.active {
+  transform: scale(0.95);
+}
+
+.input-cue > p {
+  font-size: 0.8rem;
+}
